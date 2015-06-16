@@ -5,7 +5,7 @@ git:
 #	git checkout master
 #	git merge filling-in-layout
 #	git push
-	git remote add origin https://github.com/fengzhiquxiang/mfeng.git
+	git remote add origin https://github.com/fengzhiquxiang/sample_app.git
 	git push -u origin master
 heroku:
 	git push heroku
