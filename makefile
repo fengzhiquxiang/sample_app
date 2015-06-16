@@ -5,6 +5,10 @@ git:
 #	git checkout master
 #	git merge filling-in-layout
 #	git push
+
+####### fatal: remote origin already exists.
+#	git remote rm origin
+
 	git remote add origin https://github.com/fengzhiquxiang/sample_app.git
 	git push -u origin master
 heroku:
