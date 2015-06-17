@@ -3,7 +3,7 @@ git:
 	git add .
 	git commit -m "add ssh message"
 	git checkout master
-	git merge add-ssh-message
+	# git merge add-ssh-message
 	git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	git push
 
