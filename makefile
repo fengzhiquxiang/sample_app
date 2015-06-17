@@ -4,7 +4,7 @@ git:
 	git commit -m "add ssh message"
 	git checkout master
 	git merge add-ssh-message
-#	git push
+	git push
 
 ####### fatal: remote origin already exists.
 	# git remote rm origin
@@ -15,7 +15,7 @@ git:
 
 	# git remote add origin https://github.com/fengzhiquxiang/sample_app.git
 	# git push -u origin master
-	git push master
+	# git push master
 heroku:
 	git push heroku
 	heroku open
