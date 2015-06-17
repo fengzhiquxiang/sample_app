@@ -13,7 +13,7 @@ git:
 #git reset HEAD . # This undoes the index changes
 #git checkout .   # This checks out files in this and child directories from the HEAD
 
-	git remote add origin https://github.com/fengzhiquxiang/sample_app.git
+	# git remote add origin https://github.com/fengzhiquxiang/sample_app.git
 	git push -u origin master
 heroku:
 	git push heroku
