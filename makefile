@@ -1,7 +1,7 @@
 git:
 	git init
 	git add .
-	git commit -m "add ssh message"
+	git commit -m "modify debug message"
 	git checkout master
 	# git merge add-ssh-message
 	git remote add origin git@github.com:fengzhiquxiang/sample_app.git
