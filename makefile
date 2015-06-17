@@ -2,7 +2,7 @@ git:
 	git init
 	git add .
 	git commit -m "add ssh message"
-#	git checkout master
+	git checkout master
 #	git merge filling-in-layout
 #	git push
 
