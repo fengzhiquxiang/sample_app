@@ -1,13 +1,13 @@
 git:
 	git init
 	git add .
-	git commit -m "Make a basic User model (including secure passwords)2"
+	git commit -m "add debug message"
 #	git checkout master
 #	git merge filling-in-layout
 #	git push
 
 ####### fatal: remote origin already exists.
-#	git remote rm origin
+	git remote rm origin
 
 #Since git rm . -r  deletes all files in this and child directories in the working checkout as well as in the index, you need to undo each of these changes:
 #git reset HEAD . # This undoes the index changes
