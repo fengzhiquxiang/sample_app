@@ -14,7 +14,8 @@ git:
 #git checkout .   # This checks out files in this and child directories from the HEAD
 
 	# git remote add origin https://github.com/fengzhiquxiang/sample_app.git
-	git push -u origin master
+	# git push -u origin master
+	git push master
 heroku:
 	git push heroku
 	heroku open
