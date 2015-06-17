@@ -15,7 +15,7 @@ git:
 
 	# git remote add origin https://github.com/fengzhiquxiang/sample_app.git
 	# git push -u origin master
-	git push
+	git push master
 heroku:
 	git push heroku
 	heroku open
