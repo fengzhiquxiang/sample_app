@@ -3,10 +3,11 @@ class UsersController < ApplicationController
   end
 
   def show
-  	@uu = User.find_by_email("michael@example.com")
+  	@uu = User.find(params[:id])
   end
 
   def index
   	@us = User.all
   end
+  
 end
