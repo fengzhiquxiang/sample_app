@@ -1,7 +1,7 @@
 git:
 	git init
 	git add .
-	git commit -m "add Gravatar"
+	git commit -m "add some tests"
 	git checkout master
 	# git merge add-ssh-message
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
