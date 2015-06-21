@@ -3,7 +3,7 @@ git:
 	git add .
 	git commit -m "add gen-no-test in makefile"
 	git checkout master
-	git config --global push.default simple
+	# git config --global push.default simple
 	# git merge add-ssh-message
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	git push
