@@ -1,7 +1,7 @@
 git:
 	git init
 	git add .
-	git commit -m "add something in makefile"
+	git commit -m "sample_app/spec/requests/user_pages_spec.rb:41: syntax error, unexpected end-of-input, expecting keyword_end (SyntaxError)"
 	git checkout master
 	# git config --global push.default simple
 	# git merge add-ssh-message

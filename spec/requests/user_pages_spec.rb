@@ -22,17 +22,12 @@ describe "UserPages" do
 		let(:submit) { "Create my account" }
 
 		describe "with invalid information" do
-			before do
-				fill_in "Name",	with:""
-				fill_in "Email",with:""
-				fill_in "Password",	with:""
-				fill_in "Confirmation", with:""
-			end
 			it "should not create a user" do
-			expect { click_button submit }.not_to change(User, :count)
-		end	
+				expect { click_button submit }.not_to change(User, :count)
+			end	
+		end
 
-		describe "with valid information"
+		describe "with valid information" do
 			before do
 				fill_in "Name",	with:"Example User"
 				fill_in "Email",with:"user@example.com"
