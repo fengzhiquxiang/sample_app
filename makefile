@@ -1,8 +1,9 @@
 git:
 	git init
 	git add .
-	git commit -m "add flash messages"
+	git commit -m "add gen-no-test in makefile"
 	git checkout master
+	git config --global push.default simple
 	# git merge add-ssh-message
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	git push
@@ -18,13 +19,17 @@ git:
 	# git push -u origin master
 	# git push master
 heroku:
+	# git commit -a -m "Add SSL in production"
 	git push heroku
 	heroku open
+	heroku run rake db:migrate
 	heroku logs
 ssh:
 	ssh-keygen -t rsa -b 4096 -C "fengzhiquxiang@gmail.com"
 # Creates a new ssh key, using the provided email as a label
 # Generating public/private rsa key pair.
+gen-no-test:
+	rails generate controller Sessions --no-test-framework
 ssh-agent:
 	# start the ssh-agent in the background
 	eval "$(ssh-agent -s)"
