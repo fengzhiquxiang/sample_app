@@ -1,12 +1,13 @@
 git:
 	git init
 	git add .
-	git commit -m "add gen-no-test in makefile"
+	git commit -m "add something in makefile"
 	git checkout master
 	# git config --global push.default simple
 	# git merge add-ssh-message
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	git push
+	# git push --set-upstream origin master
 
 ####### fatal: remote origin already exists.
 	# git remote rm origin
@@ -30,6 +31,9 @@ ssh:
 # Generating public/private rsa key pair.
 gen-no-test:
 	rails generate controller Sessions --no-test-framework
+ddd:
+	rake db:reset
+	rake test:prepare
 ssh-agent:
 	# start the ssh-agent in the background
 	eval "$(ssh-agent -s)"
