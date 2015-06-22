@@ -4,7 +4,8 @@ git:
 	git commit -m "followed by signout "
 	# git config --global push.default simple
 	# git merge add-ssh-message
-	git checkout -b sign-out
+	# git checkout -b sign-out
+	git checkout sign-out
 	git merge sign-out
 	# git checkout sign-out
 	# git merge master
