@@ -5,6 +5,7 @@ git:
 	# git config --global push.default simple
 	# git merge add-ssh-message
 	git checkout -b sign-out
+	git merge sign-out
 	# git checkout sign-out
 	# git merge master
 	# git checkout master
