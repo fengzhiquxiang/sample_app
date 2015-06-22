@@ -5,11 +5,11 @@ git:
 	# git config --global push.default simple
 	# git merge add-ssh-message
 	# git checkout -b sign-in-out
-	git merge sign-in-out
-	git push --set-upstream origin sign-in-out
-	# git checkout master
+	# git merge sign-in-out
+	# git push --set-upstream origin sign-in-out
+	git checkout master
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
-	# git push
+	git push
 	# git push --set-upstream origin master
 
 ####### fatal: remote origin already exists.
