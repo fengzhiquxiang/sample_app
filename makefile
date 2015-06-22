@@ -1,7 +1,7 @@
 git:
 	git init
 	git add .
-	git commit -m "config.assets.compile = true"
+	git commit -m "add some test after submit"
 	git checkout master
 	# git config --global push.default simple
 	# git merge add-ssh-message
@@ -45,6 +45,9 @@ gen-no-test:
 ddd:
 	rake db:reset
 	rake test:prepare
+ddd2:
+	rake db:migrate RAILS_ENV=development 
+	rake db:migrate RAILS_ENV=test
 ssh-agent:
 	# start the ssh-agent in the background
 	eval "$(ssh-agent -s)"
