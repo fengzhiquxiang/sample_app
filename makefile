@@ -1,22 +1,16 @@
-BRANCH=sign-out
+BRANCH=updating-users
 
 branch:
 	git init
 	git add .
 	git commit -m "followed by signout "
 	# git config --global push.default simple
-	# git merge add-ssh-message
-	# git checkout -b $(BRANCH)
+	git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
 	git merge $(BRANCH)
-	# git checkout sign-out
-	# git merge master
-	# git checkout master
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
-	# git rebase master
-	# git merge masters
-	# git push
-	git push --set-upstream origin $(BRANCH)
+	git push
+	# git push --set-upstream origin $(BRANCH)
 
 
 git:
@@ -24,14 +18,11 @@ git:
 	git add .
 	git commit -m "followed by signout "
 	# git config --global push.default simple
-	# git merge sign-out
-	# git checkout sign-out
 	git checkout master
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	# git rebase master
 	git merge $(BRANCH)
 	git push
-	# git push --set-upstream origin sign-out
 	# git push --set-upstream origin master
 
 ####### fatal: remote origin already exists.
