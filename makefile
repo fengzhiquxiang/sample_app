@@ -1,11 +1,11 @@
 git:
 	git init
 	git add .
-	git commit -m "push.default simple"
+	git commit -m "config.assets.compile = true"
 	git checkout master
 	# git config --global push.default simple
 	# git merge add-ssh-message
-	git remote add origin git@github.com:fengzhiquxiang/sample_app.git
+	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	git push
 	# git push --set-upstream origin master
 
@@ -22,11 +22,20 @@ git:
 clone:
 	git clone https://github.com/fengzhiquxiang/sample_app.git
 heroku:
-	# git commit -a -m "Add SSL in production"
-	git push heroku
+	# git push heroku
+	heroku create
+	git commit -a -m "config.assets.compile = true"
+	git push heroku master
 	heroku open
 	heroku run rake db:migrate
 	heroku logs
+	# web: bundle exec puma -C config/puma.rb
+	# heroku run rails console
+	# heroku run bash
+	# heroku pg
+
+heroku-install:
+	wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 ssh:
 	ssh-keygen -t rsa -b 4096 -C "fengzhiquxiang@gmail.com"
 # Creates a new ssh key, using the provided email as a label
