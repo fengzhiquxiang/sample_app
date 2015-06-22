@@ -4,9 +4,9 @@ git:
 	git commit -m "add sign-in-out to master "
 	# git config --global push.default simple
 	# git merge add-ssh-message
-	# git checkout -b sign-in-out
-	# git merge sign-in-out
-	git checkout master
+	git checkout -b sign-in-out
+	git merge sign-in-out
+	# git checkout master
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	git push
 	# git push --set-upstream origin master
