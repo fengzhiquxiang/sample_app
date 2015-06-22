@@ -18,4 +18,14 @@ class SessionsController < ApplicationController
 	def destroy
 		
 	end
+
+	private
+
+		def sign_in user
+			
+		end
+
+		def redirect_back_or user
+			
+		end
 end

@@ -1,7 +1,7 @@
 git:
 	git init
 	git add .
-	git commit -m "about flash.now "
+	git commit -m "AddRememberTokenToUsers"
 	# git config --global push.default simple
 	# git merge add-ssh-message
 	# git checkout -b sign-in-out
