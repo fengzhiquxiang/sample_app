@@ -4,7 +4,7 @@ git:
 	git commit -m "about flash.now "
 	# git config --global push.default simple
 	# git merge add-ssh-message
-	git checkout -b sign-in-out
+	# git checkout -b sign-in-out
 	git merge sign-in-out
 	git push --set-upstream origin sign-in-out
 	# git checkout master
