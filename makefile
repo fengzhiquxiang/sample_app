@@ -9,8 +9,8 @@ branch:
 	git checkout $(BRANCH)
 	git merge $(BRANCH)
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
-	git push
-	# git push --set-upstream origin $(BRANCH)
+	# git push
+	git push --set-upstream origin $(BRANCH)
 
 
 git:
