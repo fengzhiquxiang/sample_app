@@ -19,13 +19,4 @@ class SessionsController < ApplicationController
 		
 	end
 
-	private
-
-		def sign_in user
-			
-		end
-
-		def redirect_back_or user
-			
-		end
 end
