@@ -16,7 +16,9 @@ class SessionsController < ApplicationController
 	end
 
 	def destroy
-		
+		sign_out
+		flash.now[:notice] = 'welcome again!'
+		render 'signin'
 	end
 
 end
