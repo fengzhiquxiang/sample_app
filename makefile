@@ -5,7 +5,7 @@ branch:
 	git add .
 	git commit -m "$(MM)"
 	# git config --global push.default simple
-	git checkout -b $(BRANCH)
+	# git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
 	git merge $(BRANCH)
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
