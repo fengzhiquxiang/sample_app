@@ -24,16 +24,12 @@ git:
 	git add .
 	git commit -m "followed by signout "
 	# git config --global push.default simple
-	# git merge add-ssh-message
-	# git checkout -b sign-out
-	# git checkout sign-out
 	# git merge sign-out
 	# git checkout sign-out
-	# git merge master
-	# git checkout master
-	git remote add origin git@github.com:fengzhiquxiang/sample_app.git
+	git checkout master
+	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	# git rebase master
-	# git merge masters
+	git merge $(BRANCH)
 	git push
 	# git push --set-upstream origin sign-out
 	# git push --set-upstream origin master
