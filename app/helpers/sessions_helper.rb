@@ -15,11 +15,17 @@ module SessionsHelper
 		@current_user ||= User.find_by(remember_token: remember_token)
 	end
 
-	def sign_in user
-		
+	def signed_in?
+		!current_user.nil?
 	end
 
 	def redirect_back_or user
-		
+		redirect_to(session[:return_to] || default)
+    	session.delete(:return_to)
+	end
+
+	def sign_out
+		self.current_user = nil
+		cookies.delete(:remember_token)
 	end
 end
