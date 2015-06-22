@@ -1,7 +1,7 @@
 git:
 	git init
 	git add .
-	git commit -m "add git clone command line and git config"
+	git commit -m "push.default simple"
 	git checkout master
 	# git config --global push.default simple
 	# git merge add-ssh-message
@@ -52,3 +52,5 @@ copies:
 git-config:
 	git config --global user.email "fengzhiquxiang@gmail.com"
 	git config --global user.name "fengzhiquxiang"
+	git config --global push.default simple
+	# git config --global push.default matching
