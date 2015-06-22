@@ -11,8 +11,8 @@ git:
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	# git rebase master
 	# git merge masters
-	git push
-	# git push --set-upstream sign-in-out
+	# git push
+	git push --set-upstream sign-out
 	# git push --set-upstream origin master
 
 ####### fatal: remote origin already exists.
