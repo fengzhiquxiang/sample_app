@@ -1,7 +1,7 @@
 git:
 	git init
 	git add .
-	git commit -m "dropdown"
+	git commit -m "dropdown insert bootrap2.3 js file"
 	# git config --global push.default simple
 	# git merge add-ssh-message
 	# git checkout -b sign-in-out
