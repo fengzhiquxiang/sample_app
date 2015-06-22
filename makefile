@@ -5,7 +5,7 @@ git:
 	git checkout master
 	# git config --global push.default simple
 	# git merge add-ssh-message
-	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
+	git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	git push
 	# git push --set-upstream origin master
 
