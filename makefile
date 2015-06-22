@@ -1,9 +1,9 @@
 BRANCH=updating-users
-
+MM=updating-users
 branch:
 	git init
 	git add .
-	git commit -m "followed by signout "
+	git commit -m "$(MM)"
 	# git config --global push.default simple
 	git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
@@ -16,7 +16,7 @@ branch:
 git:
 	git init
 	git add .
-	git commit -m "followed by signout "
+	git commit -m "$(MM)"
 	# git config --global push.default simple
 	git checkout master
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
