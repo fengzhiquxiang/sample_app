@@ -1,7 +1,7 @@
 git:
 	git init
 	git add .
-	git commit -m "sample_app/spec/requests/user_pages_spec.rb:41: syntax error, unexpected end-of-input, expecting keyword_end (SyntaxError)"
+	git commit -m "add git clone command line and git config"
 	git checkout master
 	# git config --global push.default simple
 	# git merge add-ssh-message
@@ -19,6 +19,8 @@ git:
 	# git remote add origin https://github.com/fengzhiquxiang/sample_app.git
 	# git push -u origin master
 	# git push master
+clone:
+	git clone https://github.com/fengzhiquxiang/sample_app.git
 heroku:
 	# git commit -a -m "Add SSL in production"
 	git push heroku
@@ -47,4 +49,6 @@ copies:
 
 	xclip -sel clip < ~/.ssh/id_rsa.pub
 	# Copies the contents of the id_rsa.pub file to your clipboard
-
+git-config:
+	git config --global user.email "fengzhiquxiang@gmail.com"
+	git config --global user.name "fengzhiquxiang"
