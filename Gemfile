@@ -40,6 +40,8 @@ group :development, :test do
   #gem 'byebug'
   gem 'sqlite3', '1.3.7'
   gem 'rspec-rails', '2.13.1'
+  gem 'spork', '~> 1.0rc'
+  # require 'spork'
   # gem 'guard-rspec', '2.5.0'
   gem 'pry-nav'
   # Access an IRB console on exception pages or by using <%= console %> in views
