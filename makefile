@@ -1,5 +1,5 @@
 BRANCH=edit-users
-MM=better visit
+MM=some changes
 branch:
 	git init
 	git add .
@@ -9,8 +9,8 @@ branch:
 	git checkout $(BRANCH)
 	git merge $(BRANCH)
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
-	# git push
-	git push --set-upstream origin $(BRANCH)
+	git push
+	# git push --set-upstream origin $(BRANCH)
 
 
 git:
@@ -20,7 +20,7 @@ git:
 	# git config --global push.default simple
 	git checkout master
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
-	# git rebase master
+	git rebase master
 	git merge $(BRANCH)
 	git push
 	# git push --set-upstream origin master
