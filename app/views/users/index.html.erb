@@ -1,4 +1,10 @@
-<% @us.each do |u| %>
-	<%= u.name %>---><%= u.email %>
-	<br />
-<% end %>
+<% provide(:title, "All users") %>
+<h1>All users</h1>
+<ul class="users">
+	<% @us.each do |user| %>
+		<li>
+			<%= gravatar_for user %>
+			<%= link_to user.name, user %>
+		</li>
+	<% end %>
+</ul>

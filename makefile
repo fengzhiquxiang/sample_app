@@ -1,5 +1,5 @@
 BRANCH=edit-users
-MM=correct_user
+MM=some changes
 branch:
 	git init
 	git add .
