@@ -1,5 +1,5 @@
-BRANCH=updating-users2
-MM=updating-users222222222211111
+BRANCH=edit-users
+MM=edit user in spec
 branch:
 	git init
 	git add .
