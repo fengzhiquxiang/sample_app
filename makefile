@@ -1,5 +1,5 @@
 BRANCH=edit-users
-MM=add non-admin test 2
+MM=add non-admin test in master
 branch:
 	git init
 	git add .
@@ -20,7 +20,7 @@ git:
 	# git config --global push.default simple
 	git checkout master
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
-	git rebase master
+	# git rebase master
 	git merge $(BRANCH)
 	git push
 	# git push --set-upstream origin master
