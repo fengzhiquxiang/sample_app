@@ -1,5 +1,5 @@
 BRANCH=edit-users
-MM=some changes
+MM=add non-admin test in master
 branch:
 	git init
 	git add .
@@ -20,7 +20,7 @@ git:
 	# git config --global push.default simple
 	git checkout master
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
-	git rebase master
+	# git rebase master
 	git merge $(BRANCH)
 	git push
 	# git push --set-upstream origin master
@@ -64,6 +64,16 @@ ddd:
 ddd2:
 	rake db:migrate RAILS_ENV=development 
 	rake db:migrate RAILS_ENV=test
+ddd3:
+	bundle exec rake db:reset
+	bundle exec rake db:populate
+	bundle exec rake test:prepare
+hhh1:
+	git push heroku
+	heroku pg:reset DATABASE
+	heroku run rake db:migrate
+	heroku run rake db:populate
+	heroku restart
 ssh-agent:
 	# start the ssh-agent in the background
 	eval "$(ssh-agent -s)"

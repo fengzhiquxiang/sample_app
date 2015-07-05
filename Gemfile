@@ -32,6 +32,10 @@ gem 'sdoc', '0.3.20', require: false , group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+gem 'faker', '1.1.2'
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -57,8 +61,11 @@ group :test do
 	gem 'selenium-webdriver', '2.0.0'
 	gem 'capybara', '2.1.0'
   gem 'factory_girl_rails', '4.2.1'
+  gem 'cucumber-rails', '1.3.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 group :production do
 	gem 'pg', '0.15.1'
+  gem  'rails_12factor', '0.0.2'
 end
