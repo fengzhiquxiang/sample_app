@@ -1,5 +1,5 @@
 BRANCH=edit-users
-MM=add non-admin test
+MM=add non-admin test 2
 branch:
 	git init
 	git add .
@@ -68,6 +68,12 @@ ddd3:
 	bundle exec rake db:reset
 	bundle exec rake db:populate
 	bundle exec rake test:prepare
+hhh1:
+	git push heroku
+	heroku pg:reset DATABASE
+	heroku run rake db:migrate
+	heroku run rake db:populate
+	heroku restart
 ssh-agent:
 	# start the ssh-agent in the background
 	eval "$(ssh-agent -s)"
