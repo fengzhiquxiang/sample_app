@@ -1,5 +1,5 @@
 BRANCH=edit-users
-MM=some changes2
+MM=add non-admin test
 branch:
 	git init
 	git add .

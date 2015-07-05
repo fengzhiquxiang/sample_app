@@ -5,5 +5,8 @@ FactoryGirl.define do
 		password "foobar"
 		password_confirmation "foobar"
 		# remember_token "f1cbb0158c77c85e40d81c59e383e1950a031d2c"
+		factory :admin do
+			admin true
+		end
 	end
 end
