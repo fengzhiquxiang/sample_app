@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :signed_in_user, only: [:edit, :update]
+  before_action :signed_in_user, only: [:index, :edit, :update]
   before_action :correct_user,   only: [:edit, :update]
 
   def new
@@ -11,11 +11,7 @@ class UsersController < ApplicationController
   end
 
   def index
-  	unless signed_in?
-      redirect_to signin_path, notice: "Please sign in."
-    else
-      @us = User.all 
-    end 
+    @users = User.paginate(page: params[:page])
   end
 
   def create

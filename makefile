@@ -1,5 +1,5 @@
 BRANCH=edit-users
-MM=some changes
+MM=some changes2
 branch:
 	git init
 	git add .
@@ -64,6 +64,10 @@ ddd:
 ddd2:
 	rake db:migrate RAILS_ENV=development 
 	rake db:migrate RAILS_ENV=test
+ddd3:
+	bundle exec rake db:reset
+	bundle exec rake db:populate
+	bundle exec rake test:prepare
 ssh-agent:
 	# start the ssh-agent in the background
 	eval "$(ssh-agent -s)"

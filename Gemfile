@@ -32,6 +32,10 @@ gem 'sdoc', '0.3.20', require: false , group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+gem 'faker', '1.1.2'
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
