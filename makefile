@@ -1,5 +1,5 @@
 BRANCH=edit-users
-MM=add some test3
+MM=add some test3 in master
 branch:
 	git init
 	git add .
