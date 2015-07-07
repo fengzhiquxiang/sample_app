@@ -1,5 +1,5 @@
-BRANCH=edit-users
-MM=add some test3 in master
+BRANCH=user-microposts
+MM=begin write microposts
 branch:
 	git init
 	git add .
