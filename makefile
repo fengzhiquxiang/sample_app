@@ -1,5 +1,5 @@
 BRANCH=edit-users
-MM=add non-admin test in master
+MM=add some test3 in master
 branch:
 	git init
 	git add .
