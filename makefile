@@ -1,5 +1,5 @@
 BRANCH=user-microposts
-MM=begin write microposts
+MM=should have the right microposts in the right order
 branch:
 	git init
 	git add .
