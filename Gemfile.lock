@@ -218,3 +218,6 @@ DEPENDENCIES
   uglifier (= 2.1.1)
   will_paginate (= 3.0.4)
   zip-zip
+
+BUNDLED WITH
+   1.10.4
