@@ -1,5 +1,5 @@
 BRANCH=user-microposts
-MM=User micropost associations should have the right microposts in the right order
+MM=should have the right microposts in the right order 2
 branch:
 	git init
 	git add .
