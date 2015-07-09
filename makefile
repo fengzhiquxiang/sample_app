@@ -1,5 +1,5 @@
 BRANCH=user-microposts
-MM=should have the right microposts in the right order 2
+MM=should destroy associated microposts
 branch:
 	git init
 	git add .
