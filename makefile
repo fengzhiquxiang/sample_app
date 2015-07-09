@@ -1,5 +1,5 @@
 BRANCH=user-microposts
-MM=should destroy associated microposts
+MM=should destroy associated microposts (push no password)
 branch:
 	git init
 	git add .
@@ -19,7 +19,7 @@ git:
 	git commit -m "$(MM)"
 	# git config --global push.default simple
 	git checkout master
-	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
+	git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	# git rebase master
 	git merge $(BRANCH)
 	git push
