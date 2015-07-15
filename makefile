@@ -50,7 +50,11 @@ heroku:
 	# heroku run rails console
 	# heroku run bash
 	# heroku pg
-
+he2:
+	git push heroku
+	heroku pg:reset DATABASE
+	heroku run rake db:migrate
+	heroku run rake db:populate
 heroku-install:
 	wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 ssh:
