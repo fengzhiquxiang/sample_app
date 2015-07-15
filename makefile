@@ -1,5 +1,5 @@
 BRANCH=user-microposts
-MM=should have the right microposts in the right order 2
+MM=implement :to_partial_path
 branch:
 	git init
 	git add .
@@ -7,7 +7,7 @@ branch:
 	# git config --global push.default simple
 	# git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
-	# git merge $(BRANCH)
+	git merge $(BRANCH)
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	git push
 	# git push --set-upstream origin $(BRANCH)
