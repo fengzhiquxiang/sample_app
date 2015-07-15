@@ -1,5 +1,5 @@
 BRANCH=user-microposts
-MM=implement :to_partial_path
+MM=microposts show modify
 branch:
 	git init
 	git add .
