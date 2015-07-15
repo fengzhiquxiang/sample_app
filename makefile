@@ -1,5 +1,5 @@
 BRANCH=user-microposts
-MM=microposts show modify
+MM=object.errors.full_messages
 branch:
 	git init
 	git add .
@@ -7,7 +7,7 @@ branch:
 	# git config --global push.default simple
 	# git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
-	git merge $(BRANCH)
+	# git merge $(BRANCH)
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	git push
 	# git push --set-upstream origin $(BRANCH)
@@ -58,6 +58,10 @@ ssh:
 # Generating public/private rsa key pair.
 gen-no-test:
 	rails generate controller Sessions --no-test-framework
+gen-no-test2:
+	rails generate controller Microposts --no-test-framework
+rspec:
+	rails generate integration_test micropost_page
 ddd:
 	rake db:reset
 	rake test:prepare
