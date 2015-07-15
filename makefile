@@ -1,9 +1,9 @@
 BRANCH=user-microposts2
-MM= feed method
+MM= show Microposts in user
 MM2= rrrrr
 branch:
-	git checkout -b $(BRANCH)
-	git checkout $(BRANCH)
+	# git checkout -b $(BRANCH)
+	# git checkout $(BRANCH)
 	git init
 	git add .
 	git commit -m "$(MM)"
