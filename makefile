@@ -1,5 +1,5 @@
 BRANCH=user-microposts
-MM=microposts show modify
+MM=microposts show modify in master
 branch:
 	git init
 	git add .
