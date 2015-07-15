@@ -1,7 +1,8 @@
-BRANCH=user-microposts
-MM= branch merger master
+BRANCH=user-microposts2
+MM= feed method
+MM2= rrrrr
 branch:
-	# git checkout -b $(BRANCH)
+	git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
 	git init
 	git add .
@@ -17,7 +18,7 @@ git:
 	git checkout master
 	git init
 	git add .
-	git commit -m "$(MM)"
+	git commit -m "$(MM2)"
 	# git config --global push.default simple
 	
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
