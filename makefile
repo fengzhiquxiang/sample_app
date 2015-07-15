@@ -1,5 +1,5 @@
 BRANCH=user-microposts
-MM= @us not @users
+MM=microposts show modify
 branch:
 	git init
 	git add .
