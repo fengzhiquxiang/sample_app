@@ -1,5 +1,5 @@
 BRANCH=user-microposts
-MM=microposts not too long not empty
+MM= @us not @users
 branch:
 	git init
 	git add .
