@@ -7,7 +7,7 @@ branch:
 	# git config --global push.default simple
 	# git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
-	git merge $(BRANCH)
+	# git merge $(BRANCH)
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	git push
 	# git push --set-upstream origin $(BRANCH)
