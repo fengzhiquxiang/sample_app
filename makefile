@@ -1,5 +1,5 @@
 BRANCH=user-microposts2
-MM= show Microposts in user
+MM= delete Microposts in user
 MM2= rrrrr
 branch:
 	# git checkout -b $(BRANCH)
