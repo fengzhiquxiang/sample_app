@@ -1,8 +1,9 @@
-BRANCH=user-microposts
-MM= branch merger master
+BRANCH=user-microposts2
+MM= branch merger master 343
 branch:
 	# git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
+branch2:
 	git init
 	git add .
 	git commit -m "$(MM)"
@@ -11,10 +12,9 @@ branch:
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	git push
 	# git push --set-upstream origin $(BRANCH)
-
-
-git:
+master:
 	git checkout master
+master2:
 	git init
 	git add .
 	git commit -m "$(MM)"
