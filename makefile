@@ -1,5 +1,6 @@
-BRANCH=user-microposts2
-MM= branch merger master 343
+BRANCH=following-users
+MM= following-users
+MM2= Add user following
 branch:
 	# git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
@@ -17,9 +18,9 @@ master:
 master2:
 	git init
 	git add .
-	git commit -m "$(MM)"
+	git commit -m "$(MM2)"
 	# git config --global push.default simple
-	
+	git checkout master
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	# git rebase master
 	git merge $(BRANCH)
