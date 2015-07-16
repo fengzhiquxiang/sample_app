@@ -1,5 +1,5 @@
-BRANCH=following-users
-MM= following-users
+BRANCH=post-message
+MM= message
 MM2= :per_page => 5
 branch:
 	# git checkout -b $(BRANCH)
