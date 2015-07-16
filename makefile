@@ -1,6 +1,6 @@
 BRANCH=following-users
 MM= following-users
-MM2= Add user following
+MM2= :per_page => 5
 branch:
 	# git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
