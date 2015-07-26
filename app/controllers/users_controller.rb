@@ -1,14 +1,14 @@
 class UsersController < ApplicationController
   before_action :signed_in_user, only: [:index, :edit, :update, :destroy, :following, :followers]
   before_action :correct_user,   only: [:edit, :update]
-  before_action :admin_user,only: :destroy
+  before_action :admin_user, only: :destroy
+  before_action :find_user, only: [:show, :edit, :update, :following, :followers]
 
   def new
   	@user = User.new
   end
 
   def show
-  	@user= User.find(params[:id])
     @microposts = @user.microposts.paginate(page: params[:page])
   end
 
@@ -28,12 +28,9 @@ class UsersController < ApplicationController
   end
   
   def edit
-    @user = User.find(params[:id])
   end
   
   def update
-    @user = User.find(params[:id])
-    # Not the final implementation!
     if @user.update_attributes(user_params)
       flash[:success] = "Update your profile successfully!"
       redirect_to @user
@@ -43,21 +40,19 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    User.find(params[:id]).destroy
+    find_user.destroy
     flash[:success] = "User destroyed."
     redirect_to users_url
   end
 
   def following
     @title = "Following"
-    @user = User.find(params[:id])
     @users = @user.followed_users.paginate(page: params[:page])
     render 'show_follow'
   end
   
   def followers
     @title = "Followers"
-    @user = User.find(params[:id])
     @users = @user.followers.paginate(page: params[:page])
     render 'show_follow'
   end
@@ -69,11 +64,14 @@ class UsersController < ApplicationController
   end
 
   def correct_user
-    @user = User.find(params[:id])
-    redirect_to(root_path) unless current_user?(@user)
+    redirect_to(root_path) unless current_user?(find_user)
   end
 
   def admin_user
     redirect_to(root_path) unless current_user.admin?
+  end
+
+  def find_user
+    @user = User.find(params[:id])
   end
 end

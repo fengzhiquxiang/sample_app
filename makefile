@@ -1,6 +1,6 @@
-BRANCH=post-message
-MM= message
-MM2= :per_page => 5
+BRANCH=reply-message
+MM= reply message
+MM2= make name uniqueness
 branch:
 	# git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
