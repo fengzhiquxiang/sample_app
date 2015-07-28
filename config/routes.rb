@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  resources :replies
+
   # get "users/new"
 
   resources :users do

@@ -1,6 +1,6 @@
 BRANCH=reply-message
-MM= reply-message 333
-MM2= reply-message 333 in master
+MM= reply-message 4
+MM2= reply-message 4 in master
 branch:
 	# git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
@@ -23,7 +23,7 @@ master2:
 	git checkout master
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	# git rebase master
-	git merge $(BRANCH)
+	# git merge $(BRANCH)
 	git push
 	# git push --set-upstream origin master
 
@@ -63,7 +63,7 @@ ssh:
 # Creates a new ssh key, using the provided email as a label
 # Generating public/private rsa key pair.
 sca:
-	rails generate scaffold Reply name:string email:string
+	rails generate scaffold Reply reply_to:string content:string
 gen-no-test:
 	rails generate controller Sessions --no-test-framework
 gen-no-test2:
