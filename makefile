@@ -1,6 +1,6 @@
 BRANCH=reply-message
-MM= wrap content
-MM2= make name uniqueness
+MM= reply-message 222
+MM2= reply-message 222 in master
 branch:
 	# git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
