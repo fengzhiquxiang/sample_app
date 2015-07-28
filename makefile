@@ -1,6 +1,6 @@
 BRANCH=reply-message
 MM= reply message
-MM2= reply-message 222 in master
+MM2= make name uniqueness
 branch:
 	# git checkout -b $(BRANCH)
 	git checkout $(BRANCH)

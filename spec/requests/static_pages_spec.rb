@@ -104,5 +104,9 @@ describe "StaticPages" do
             it { should have_link("0 following", href: following_user_path(user)) }
             it { should have_link("1 followers", href: followers_user_path(user)) }
         end
+
+        describe "add reply botton" do
+            it { should have_selector('botton', text: 'Reply') }
+        end
     end
 end
