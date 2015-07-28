@@ -1,5 +1,5 @@
 BRANCH=reply-message
-MM= reply message
+MM= wrap content
 MM2= make name uniqueness
 branch:
 	# git checkout -b $(BRANCH)
