@@ -1,6 +1,6 @@
 BRANCH=reply-message
-MM= reply message
-MM2= make name uniqueness
+MM= reply-message 333
+MM2= reply-message 333 in master
 branch:
 	# git checkout -b $(BRANCH)
 	git checkout $(BRANCH)
@@ -62,6 +62,8 @@ ssh:
 	ssh-keygen -t rsa -b 4096 -C "fengzhiquxiang@gmail.com"
 # Creates a new ssh key, using the provided email as a label
 # Generating public/private rsa key pair.
+sca:
+	rails generate scaffold Reply name:string email:string
 gen-no-test:
 	rails generate controller Sessions --no-test-framework
 gen-no-test2:
