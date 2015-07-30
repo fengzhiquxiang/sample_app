@@ -1,26 +1,13 @@
 BRANCH=reply-message
-MM= reply-message 4
-MM2= reply-message 4 in master
-branch:
-	# git checkout -b $(BRANCH)
-	git checkout $(BRANCH)
-branch2:
-	git init
-	git add .
-	git commit -m "$(MM)"
-	# git config --global push.default simple
-	# git merge $(BRANCH)
-	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
-	git push
-	# git push --set-upstream origin $(BRANCH)
-master:
-	git checkout master
-master2:
+MM= reply message
+MM2= add name regular expression
+
+default:
 	git init
 	git add .
 	git commit -m "$(MM2)"
 	# git config --global push.default simple
-	git checkout master
+	# git checkout master
 	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
 	# git rebase master
 	# git merge $(BRANCH)
@@ -37,6 +24,20 @@ master2:
 	# git remote add origin https://github.com/fengzhiquxiang/sample_app.git
 	# git push -u origin master
 	# git push master
+master:
+	git checkout master
+branch:
+	# git checkout -b $(BRANCH)
+	git checkout $(BRANCH)
+branch2:
+	git init
+	git add .
+	git commit -m "$(MM)"
+	# git config --global push.default simple
+	# git merge $(BRANCH)
+	# git remote add origin git@github.com:fengzhiquxiang/sample_app.git
+	git push
+	# git push --set-upstream origin $(BRANCH)
 clone:
 	git clone https://github.com/fengzhiquxiang/sample_app.git
 heroku:

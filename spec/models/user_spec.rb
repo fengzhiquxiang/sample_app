@@ -35,6 +35,18 @@ describe User do
 		it { should_not be_valid }
 	end
 
+	describe "name format" do
+		names = %w[@@.com erere.com aaa@dfdf add23@@dfd..com]
+		names.each do |add|
+			it "the email format #{add} is not valid" do
+				# before {@user.email = add}
+				@user.email = add
+				expect(@user).not_to be_valid
+				# it { should_not be_valid }
+			end
+		end
+	end
+
 	describe "when email is not present" do
 		before { @user.email = " " }
 		it { should_not be_valid }
