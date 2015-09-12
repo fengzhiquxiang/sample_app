@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20150728085304) do
   add_index "relationships", ["follower_id"], name: "index_relationships_on_follower_id"
 
   create_table "replies", force: true do |t|
-    t.string   "reply_to"
+    t.integer  "reply_to"
     t.string   "content"
     t.datetime "created_at"
     t.datetime "updated_at"

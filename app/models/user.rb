@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
 	before_save { self.email = email.downcase }
 	before_create :create_remember_token
 
-  VALID_NAME_REGEX = /^\w[\w-]*[a-zA-Z\d]$/
+    VALID_NAME_REGEX = /\A\w[\w-]*[a-zA-Z\d]\z/
 	validates :name, presence: true, length: { maximum: 50 },format: { with: VALID_NAME_REGEX }, uniqueness: true
 	# validates :email, presence: true
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
