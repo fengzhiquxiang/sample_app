@@ -87,6 +87,8 @@ hhh1:
 	heroku run rake db:migrate
 	heroku run rake db:populate
 	heroku restart
+ssh-keygen:
+	ssh-keygen -t rsa -b 4096 -C "fengzhiquxiang@gmail.com"
 ssh-agent:
 	# start the ssh-agent in the background
 	eval "$(ssh-agent -s)"
