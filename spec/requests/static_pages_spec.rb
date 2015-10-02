@@ -106,7 +106,8 @@ describe "StaticPages" do
         end
 
         describe "add reply botton" do
-            it { should have_selector('botton', text: 'Reply') }
+            it { should have_link('Reply', href: replies_path(user) }
+            # it { should have_selector('link', text: 'Reply') }
         end
     end
 end

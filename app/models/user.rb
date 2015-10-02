@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
 	has_many :microposts, dependent: :destroy
 
+	has_many :replies, dependent: :destroy
+
 	has_many :relationships, foreign_key: "follower_id", dependent: :destroy
 	has_many :followed_users, through: :relationships, source: :followed
 
@@ -8,10 +10,11 @@ class User < ActiveRecord::Base
 	has_many :followers, through: :reverse_relationships, source: :follower
 
 
+	before_save { self.name = name.downcase }
 	before_save { self.email = email.downcase }
 	before_create :create_remember_token
 
-    VALID_NAME_REGEX = /\A\w[\w-]*[a-zA-Z\d]\z/
+    VALID_NAME_REGEX = /\A[\w]+-*\.*\s*([\w]+-*\.*\s*)*[\w\.]+\z/i
 	validates :name, presence: true, length: { maximum: 50 },format: { with: VALID_NAME_REGEX }, uniqueness: true
 	# validates :email, presence: true
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
