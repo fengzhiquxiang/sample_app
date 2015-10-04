@@ -50,6 +50,7 @@ end
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
+# require 'minitest/autorun'
 require 'rspec/rails'
 require 'rspec/autorun'
 
@@ -91,3 +92,15 @@ RSpec.configure do |config|
 
   config.include Capybara::DSL
 end
+
+# RSpec.configure {|c| c.output_stream = File.open('saved_output', 'a+') }
+
+# RSpec.configure { |c| c.profile_examples = true }
+
+# RSpec.configure { |c| c.profile_examples = 2 }
+
+# RSpec.configure {|c| c.run_all_when_everything_filtered = true}
+
+# RSpec.configure {|c| c.show_failures_in_pending_blocks = true}
+
+RSpec.configure { |c| c.treat_symbols_as_metadata_keys_with_true_values = true }
